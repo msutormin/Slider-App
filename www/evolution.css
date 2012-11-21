@@ -1,0 +1,215 @@
+
+html,body,ul,ol,li,dl,dt,dd,th,td,caption,p,div,blockquote,cite,h2,form,fieldset,legend,a,img,noscript{margin:0;padding:0;border:0 none;}
+
+#mainWrp{width:1000px;margin:0 auto 20px;overflow:hidden;background-color:white;}
+
+#title {width: 1000px;margin: 10px 0 14px 0; background-image: url('logo-chevrolet.jpg');background-repeat:no-repeat;background-position: 860px -10px;}
+
+
+/* ----- overwrite existing css ----- */
+body { color: #2E2E2E; }
+
+h1 {
+    font-size: 24px;
+    line-height: 28px;
+}
+h2 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 0px;
+}
+h3 {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 6px;
+}
+
+.grid6 #mainContent {
+	margin-bottom: 60px;
+}
+
+.module { margin-bottom: 20px; }
+
+.moduleElement {
+    margin-right: 20px;
+    float: left;
+}
+
+/* module h2 commented out - margin-top for h2 not necessary as module already has margin-bottom */
+/* tbd: check if it's necessary to readjust margins in case module can contain more than one h2 */
+/*.module h2 { margin-top: 35px; } *//*40px - 5px cap height*/
+.module h3 { margin-top: 15px; } /*20px - 20px margin from p*/
+
+.module .articleImg,
+.module .articleObj { margin-bottom: 14px; }
+
+.module .anchorList { margin-bottom: 1.33em }
+.module .anchorList p { margin-bottom: 0px; }
+.module .anchorList ul { margin-bottom: 0px; }
+.module .anchorList ul li {
+    float: left;
+    width: 248px;
+    margin-left: 14px;
+}
+/* fix for IE8 - IE8 won't work with empty anchor, anchor
+now contains &nbsp; */
+.module a.anchorTarget {
+	text-decoration: none;
+	font-size: 1px;
+	line-height: 1px;
+}
+.module div.last p {
+	margin-bottom: 0;
+}
+/* Set margin-bottom on last module to 0 */
+.grid6 #mainContent .module.x4.last {
+	margin-bottom: 0;
+}
+/* ===== colorizer styles START ===== */
+#mainColorizer {
+    margin: 12px 0px 0px;
+    min-height: 340px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#mainColorizer ul {
+    list-style-type: none;
+}
+
+#mainColorizer ul li {
+    margin: 0px;
+}
+
+#mainColorizer > ul > li {
+    float: left;
+    width: 1000px;
+    min-height: 340px;
+    position: relative;
+}
+
+
+/* ----- viewport styles ----- */
+#mainColorizer ul.viewPort {
+    min-width: 1000px;
+    min-height: 340px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#mainColorizer ul.viewPort div.imageCaption {
+	display: none;
+}
+#mainColorizer > ul > li img.visual {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#mainColorizer > ul > li img.visual.active {
+    display: block;
+}
+
+
+/* ----- navigation styles ----- */
+#mainColorizer .mainNavi {
+    background: url("black-transparent70.png");
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 420px;
+}
+#mainColorizer .mainNavi .textInfo {
+    float: left;
+    padding: 0px 20px;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+#mainColorizer .mainNavi .textInfo div {
+    height: 42px;
+    display: table-cell;
+    vertical-align: middle;
+}
+#mainColorizer .mainNavi .textInfo div.infoAltText {
+    height: 70px;
+    display: table-cell;
+    vertical-align: middle;
+}
+#mainColorizer .mainNavi .imgNavi {
+    float: right;
+    padding-right: 37px;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+#mainColorizer .mainNavi .imgNavi .showVisual {
+    color: #FFFFFF;
+    float: left;
+    margin: 14px 0px 14px 12px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d6d6d6;
+    cursor: pointer;
+}
+#mainColorizer .mainNavi .imgNavi .showVisual:hover {
+}
+#mainColorizer .mainNavi .imgNavi .showVisual.active {
+    cursor: default;
+    margin: 8px 0px 8px 12px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #a6a6a6
+}
+#mainColorizer .mainNavi .imgNavi .showVisual img {
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+#mainColorizer .mainNavi .imgNavi .showVisual.active img {
+    width: 48px;
+    height: 48px;
+}
+#mainColorizer .mainNavi .viewNavi {
+    float: right;
+    width: 69px;
+    height: 24px;
+    border-left: 1px solid #C4C4C4;
+    padding: 9px 17px;
+}
+#mainColorizer .mainNavi .viewNavi span {
+    cursor: pointer;
+    width: 28px;
+    height: 24px;
+    display: block;
+    float: left;
+    text-align: center;
+}
+/*#mainColorizer .mainNavi .viewNavi span.disabled {
+    cursor: default;
+    background-color: gray;
+}*/
+#mainColorizer .mainNavi .viewNavi span.left {
+    background: url("arrows.png") no-repeat 0px -34px;
+    margin-right: 13px;
+}
+#mainColorizer .mainNavi .viewNavi span.right {
+    background: url("arrows.png") no-repeat -40px -34px;
+}
+#mainColorizer .mainNavi .viewNavi span.left:hover {
+    background: url("arrows.png") no-repeat 0px 0px;
+}
+#mainColorizer .mainNavi .viewNavi span.right:hover {
+    background: url("arrows.png") no-repeat -40px 0px;
+}
+#mainColorizer .ncap, #mainVisual .ncap, #mainColorizer .coty, #mainVisual .coty {
+	position:absolute;
+	left:20px;
+	bottom:9px;
+	z-index:2;
+}
+#mainColorizer .coty { 
+	bottom:108px;
+}
+/* ===== colorizer styles END ===== */

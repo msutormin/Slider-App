@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.msutormin.aveo"
+        version   = "0.0.1">
+    <name>The New Aveo</name>
+
+    <description>
+        The new Chevrolet Aveo test app.
+    </description>
+
+    <author email="max.sutormin@gmail.com">
+        msutormin
+    </author>
+
+    <feature name="http://api.phonegap.com/1.0/device" />
+
+    <preference name="phonegap-version" value="2.1.0" />
+    <preference name="orientation"      value="landscape" />
+    <preference name="target-device"    value="android" />
+    <preference name="fullscreen"       value="true" />
+
+    <icon src="icon.png" />
+    <gap:splash src="splash.png" />
+</widget>
